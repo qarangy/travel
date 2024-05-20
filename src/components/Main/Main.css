@@ -1,0 +1,47 @@
+.main__wrapper {
+  background-image: url('/src/img/antalya.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main__link {
+  font-size: 14px;
+  background-color: transparent;
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 25px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  background-color: #22b3c1;
+  border: 2px solid #22b3c1;
+}
+
+.main__link:hover {
+  color: #22b3c1;
+  border: 2px solid #22b3c1;
+  background-color: #fff;
+}
+
+.main__top h1,
+h2 {
+  display: block;
+}
+
+.main__card {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.card__info-text {
+  font-weight: 700;
+  font-size: 24px;
+  color: #22b3c1;
+}
+.card__info-description {
+  color: #9f9f9f;
+}
