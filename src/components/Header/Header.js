@@ -38,7 +38,7 @@ const Header = () => {
             </ul>
           </div>
 
-          <div className="navbar__left-wrapper flex items-center gap-[20px] absolute top-[50%] bottom-[50%] right-[-80px]">
+          <div className="navbar__right-wrapper flex items-center gap-[20px] absolute top-[50%] bottom-[50%] right-[-80px]">
             <div className="lang__toggle-wrapper flex items-center gap-[20px]">
               <ul className="lang__toggle-list flex gap-[20px]">
                 <li className="lang__toggle-item">

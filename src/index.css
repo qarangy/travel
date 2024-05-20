@@ -17,7 +17,7 @@ body {
   font-family: 'Poppins', 'Arial', sans-serif;
   background-color: #fff;
   font-size: 15px;
-  color: #fff;
+  color: #afafaf;
 }
 
 /* CONTAINER */
@@ -31,4 +31,5 @@ a {
   display: flex;
   margin: 0;
   padding: 0;
+  color: #fff;
 }

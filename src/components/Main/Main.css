@@ -27,6 +27,10 @@
   background-color: #fff;
 }
 
+.main__top {
+  color: #fff;
+}
+
 .main__top h1,
 h2 {
   display: block;

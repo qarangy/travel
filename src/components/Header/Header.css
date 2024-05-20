@@ -1,5 +1,6 @@
 .nav__links-item {
   position: relative;
+  color: #fff;
 }
 
 .nav__link {
@@ -20,4 +21,12 @@
 .nav__link:hover::after {
   transition: 0.3s;
   width: 20px;
+}
+
+.navbar__right-wrapper {
+  color: #fff;
+}
+
+.header__socials {
+  color: #fff;
 }
