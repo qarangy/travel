@@ -1,3 +1,4 @@
+import Deals from './components/Deals/Deals';
 import Header from './components/Header/Header';
 import Main from './components/Main/Main';
 import Offers from './components/Offers/Offers';
@@ -10,6 +11,7 @@ function App() {
       <Main />
       <Offers />
       <Visa />
+      <Deals />
     </>
   );
 }

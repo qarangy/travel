@@ -9,7 +9,7 @@ import i3 from '../../img/support-europe.jpeg.png';
 
 const Visa = () => {
   return (
-    <div className="visa__wrapper flex justify-center items-center">
+    <div className="visa__wrapper flex justify-center items-center border-b pb-[180px]">
       <div className="container">
         <div className="visa__top flex flex-col items-center justify-center text-center py-[80px]">
           <h2 className="visa__heading text-[30px] font-bold text-[#2a2a2a] pb-[20px]">
