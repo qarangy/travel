@@ -47,15 +47,15 @@ const Offers = () => {
                     Deal Includes:
                   </h3>
                   <p className="offers__card-text flex items-center">
-                    <FaTaxi className="mr-[1px]" />
+                    <FaTaxi className="mr-[3px]" />
                     {`5 Days Trip > Hotel Included`}
                   </p>
                   <p className="offers__card-text flex items-center">
-                    <FaPlane className="mr-[1px]" />
+                    <FaPlane className="mr-[3px]" />
                     Airplane Bill Included
                   </p>
                   <p className="offers__card-text flex items-center">
-                    <FaBuilding className="mr-[1px]" />
+                    <FaBuilding className="mr-[3px]" />
                     Daily Places Visit
                   </p>
                 </div>
@@ -94,15 +94,15 @@ const Offers = () => {
                     Deal Includes:
                   </h3>
                   <p className="offers__card-text flex items-center">
-                    <FaTaxi className="mr-[1px]" />
+                    <FaTaxi className="mr-[3px]" />
                     {`5 Days Trip > Hotel Included`}
                   </p>
                   <p className="offers__card-text flex items-center">
-                    <FaPlane className="mr-[1px]" />
+                    <FaPlane className="mr-[3px]" />
                     Airplane Bill Included
                   </p>
                   <p className="offers__card-text flex items-center">
-                    <FaBuilding className="mr-[1px]" />
+                    <FaBuilding className="mr-[3px]" />
                     Daily Places Visit
                   </p>
                 </div>
@@ -141,15 +141,15 @@ const Offers = () => {
                     Deal Includes:
                   </h3>
                   <p className="offers__card-text flex items-center">
-                    <FaTaxi className="mr-[1px]" />
+                    <FaTaxi className="mr-[3px]" />
                     {`5 Days Trip > Hotel Included`}
                   </p>
                   <p className="offers__card-text flex items-center">
-                    <FaPlane className="mr-[1px]" />
+                    <FaPlane className="mr-[3px]" />
                     Airplane Bill Included
                   </p>
                   <p className="offers__card-text flex items-center">
-                    <FaBuilding className="mr-[1px]" />
+                    <FaBuilding className="mr-[3px]" />
                     Daily Places Visit
                   </p>
                 </div>

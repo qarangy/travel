@@ -1,6 +1,7 @@
 import Header from './components/Header/Header';
 import Main from './components/Main/Main';
 import Offers from './components/Offers/Offers';
+import Visa from './components/Visa/Visa';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <Main />
       <Offers />
+      <Visa />
     </>
   );
 }
