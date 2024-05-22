@@ -5,6 +5,9 @@ import Main from './components/Main/Main';
 import Offers from './components/Offers/Offers';
 import Visa from './components/Visa/Visa';
 import Location from './components/Locations/Location';
+import Booking from './components/Booking/Booking';
+import Contacts from './components/Contacts/Contacts';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -16,6 +19,9 @@ function App() {
       <Deals />
       <Countries />
       <Location />
+      <Booking />
+      <Contacts />
+      <Footer />
     </>
   );
 }
