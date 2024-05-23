@@ -1,5 +1,21 @@
-.main__wrapper {
+.main__slider-img {
+  display: flex;
+}
+
+.main__slider-1 {
   background-image: url('/src/img/antalya.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main__slider-2 {
+  background-image: url('/src/img/dubai.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main__slider-3 {
+  background-image: url('/src/img/sharm-el-sheykh.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -37,6 +53,7 @@ h2 {
 }
 
 .main__card {
+  min-width: 268px;
   padding-left: 12px;
   padding-right: 12px;
 }
@@ -48,4 +65,15 @@ h2 {
 }
 .card__info-description {
   color: #9f9f9f;
+}
+
+.swiper-pagination {
+  margin-bottom: 80px;
+}
+
+.swiper-pagination-bullet {
+  width: 10%;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 0;
 }
