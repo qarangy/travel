@@ -1,4 +1,4 @@
-import { Link, NavLink } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import { FaInstagram, FaTelegramPlane } from 'react-icons/fa';
 import img from '../../img/logo.svg';
 import './Header.css';
@@ -16,43 +16,43 @@ const Header = () => {
           <div className="navbar mr-[338px]">
             <ul className="nav__links-list flex gap-[20px]">
               <li className="nav__links-item">
-                <NavLink className="nav__link" to="/">
+                <Link smooth className="nav__link" to="/">
                   Home
-                </NavLink>
+                </Link>
               </li>
               <li className="nav__links-item">
-                <NavLink className="nav__link" to="#deals">
+                <Link smooth className="nav__link" to="#deals">
                   About
-                </NavLink>
+                </Link>
               </li>
               <li className="nav__links-item">
-                <NavLink className="nav__link" to="/">
+                <Link smooth className="nav__link" to="#tours">
                   Tours
-                </NavLink>
+                </Link>
               </li>
               <li className="nav__links-item">
-                <NavLink className="nav__link" to="/">
+                <Link smooth className="nav__link" to="#contacts">
                   Contacts
-                </NavLink>
+                </Link>
               </li>
             </ul>
           </div>
 
           <div className="navbar__right-wrapper flex items-center gap-[20px] absolute top-[50%] bottom-[50%] right-[-80px]">
             <div className="lang__toggle-wrapper flex items-center gap-[20px]">
-              <ul className="lang__toggle-list flex gap-[20px]">
-                <li className="lang__toggle-item">
-                  <Link className="lang__toggle-link" to="/">
+              <ul className="lang__toggle-list nav__links-list flex">
+                <li className="nav__links-item">
+                  <Link className="nav__link" to="/">
                     UZ
                   </Link>
                 </li>
-                <li className="lang__toggle-item">
-                  <Link className="lang__toggle-link" to="/">
+                <li className="nav__links-item">
+                  <Link className="nav__link" to="#deals">
                     ENG
                   </Link>
                 </li>
-                <li className="lang__toggle-item">
-                  <Link className="lang__toggle-link" to="/">
+                <li className="nav__links-item">
+                  <Link className="nav__link" to="/">
                     RU
                   </Link>
                 </li>

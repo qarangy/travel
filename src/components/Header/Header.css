@@ -5,6 +5,7 @@
 
 .nav__link {
   margin: 8px 14px;
+  cursor: pointer;
 }
 
 .nav__link::after {

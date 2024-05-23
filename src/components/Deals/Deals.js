@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import i1 from '../../img/deals-railway.png';
 import i2 from '../../img/deals-airplane.png';
 import './Deals.css';

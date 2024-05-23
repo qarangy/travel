@@ -1,0 +1,62 @@
+.offers__container {
+  width: 100%;
+  padding: 0px 30px;
+}
+
+.swiper__wrapper {
+  position: relative;
+}
+
+.swiper-button-prev::after {
+  font-size: 18px;
+}
+
+.swiper-button-prev {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  left: 46%;
+  top: 85%;
+  color: #22b3c1;
+  background-color: #fff;
+  border: 1px solid #22b3c1;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-prev:hover {
+  color: #fff;
+  background-color: #22b3c1;
+  border: 1px solid inherit;
+  transition: color 0.3s ease;
+}
+
+.swiper-button-next::after {
+  font-size: 18px;
+}
+
+.swiper-button-next {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  top: 85%;
+  right: 46%;
+  color: #22b3c1;
+  background-color: #fff;
+  border: 1px solid #22b3c1;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover {
+  color: #fff;
+  background-color: #22b3c1;
+  border: 1px solid inherit;
+  transition: color 0.3s ease;
+}

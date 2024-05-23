@@ -3,7 +3,7 @@ import './Booking.css';
 
 const Booking = () => {
   return (
-    <div className="booking__wrapper flex flex-col justify-center items-center text-center">
+    <div className="booking__wrapper flex flex-col justify-center items-center text-center mb-[60px]">
       <div className="container">
         <div className="booking__content mt-[260px] mb-[100px]">
           <h3 className="pb-[23px] mb-[15px] text-[20px] leading-[24px] font-medium text-white">

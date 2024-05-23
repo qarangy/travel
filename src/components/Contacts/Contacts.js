@@ -6,7 +6,10 @@ import { Link } from 'react-router-dom';
 
 const Contacts = () => {
   return (
-    <div className="contacts__wrapper flex justify-center items-center mb-2">
+    <div
+      id="contacts"
+      className="contacts__wrapper flex justify-center items-center mb-2"
+    >
       <div className="container">
         <div className="contacts__info">
           <ul className="contacts__info-list flex justify-between items-center gap-[24px] text-[#22B3C1] text-[20px] mb-[70px]">

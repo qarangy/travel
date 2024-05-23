@@ -8,6 +8,7 @@ import Location from './components/Locations/Location';
 import Booking from './components/Booking/Booking';
 import Contacts from './components/Contacts/Contacts';
 import Footer from './components/Footer/Footer';
+import './index.css';
 
 function App() {
   return (
