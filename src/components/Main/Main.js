@@ -10,14 +10,14 @@ import 'swiper/css/pagination';
 
 import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules';
 
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import { FaUser, FaGlobe } from 'react-icons/fa';
 import { TiHome } from 'react-icons/ti';
 import './Main.css';
 
 const Main = () => {
   return (
-    <>
+    <div className="main__wrapper">
       <Swiper
         spaceBetween={30}
         effect={'fade'}
@@ -32,16 +32,16 @@ const Main = () => {
         className="mySwiper"
       >
         <SwiperSlide className="main__slider-1">
-          <div className="main__wrapper flex flex-col items-center justify-center min-h-[92vh]">
+          <div className="main__wrapper-inner flex flex-col items-center justify-center min-h-[92vh]">
             <div className="container">
               <div className="main__top flex flex-col items-center justify-center mb-[120px]">
-                <h2 className="main__text text-[20px] font-medium mb-[20px]">
+                <h2 className="main__text text-[20px] font-medium mb-[20px] mt-[60px]">
                   Take a Glimpse Into The Beautiful City Of:
                 </h2>
                 <h1 className="main__heading font-bold text-[50px] mb-[30px]">
                   Antalya
                 </h1>
-                <Link to="/" className="main__link">
+                <Link to="/#contacts" className="main__link">
                   Go There
                 </Link>
               </div>
@@ -81,7 +81,7 @@ const Main = () => {
                 </div>
 
                 <div className="main__card-link">
-                  <Link to="/" className="main__link">
+                  <Link to="/#contacts" className="main__link">
                     Explore More
                   </Link>
                 </div>
@@ -94,13 +94,13 @@ const Main = () => {
           <div className="main__wrapper flex flex-col items-center justify-center min-h-[92vh]">
             <div className="container">
               <div className="main__top flex flex-col items-center justify-center mb-[120px]">
-                <h2 className="main__text text-[20px] font-medium mb-[20px]">
+                <h2 className="main__text text-[20px] font-medium mb-[20px] mt-[60px]">
                   Take a Glimpse Into The Beautiful City Of:
                 </h2>
                 <h1 className="main__heading font-bold text-[50px] mb-[30px]">
                   Dubai
                 </h1>
-                <Link to="/" className="main__link">
+                <Link to="/#contacts" className="main__link">
                   Go There
                 </Link>
               </div>
@@ -140,7 +140,7 @@ const Main = () => {
                 </div>
 
                 <div className="main__card-link">
-                  <Link to="/" className="main__link">
+                  <Link to="/#contacts" className="main__link">
                     Explore More
                   </Link>
                 </div>
@@ -153,13 +153,13 @@ const Main = () => {
           <div className="main__wrapper-slider flex flex-col items-center justify-center min-h-[92vh]">
             <div className="container">
               <div className="main__top flex flex-col items-center justify-center mb-[120px]">
-                <h2 className="main__text text-[20px] font-medium mb-[20px]">
+                <h2 className="main__text text-[20px] font-medium mb-[20px] mt-[60px]">
                   Take a Glimpse Into The Beautiful City Of:
                 </h2>
                 <h1 className="main__heading font-bold text-[50px] mb-[30px]">
                   Sharm El-Sheikh
                 </h1>
-                <Link to="/" className="main__link">
+                <Link to="/#contacts" className="main__link">
                   Go There
                 </Link>
               </div>
@@ -199,7 +199,7 @@ const Main = () => {
                 </div>
 
                 <div className="main__card-link">
-                  <Link to="/" className="main__link">
+                  <Link to="/#contacts" className="main__link">
                     Explore More
                   </Link>
                 </div>
@@ -208,7 +208,7 @@ const Main = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 };
 

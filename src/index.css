@@ -34,3 +34,15 @@ a {
   color: #fff;
   cursor: pointer;
 }
+
+@media screen and (max-width: 1422px) {
+  .header__socials-list {
+    padding-right: 24px;
+  }
+}
+
+@media screen and (max-width: 140px) {
+  body {
+    width: 100%;
+  }
+}

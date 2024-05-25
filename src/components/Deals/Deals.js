@@ -36,7 +36,10 @@ const Deals = () => {
                     <span className="">Whole world</span>
                   </div>
                   <div className="deals__card-link-wrapper">
-                    <Link className="main__link deals__card-link" to="/">
+                    <Link
+                      className="main__link deals__card-link"
+                      to="/#contacts"
+                    >
                       Explore More
                     </Link>
                   </div>
@@ -68,7 +71,10 @@ const Deals = () => {
                     <span className="">Global Destinations</span>
                   </div>
                   <div className="deals__card-link-wrapper">
-                    <Link className="main__link deals__card-link" to="/">
+                    <Link
+                      className="main__link deals__card-link"
+                      to="/#contacts"
+                    >
                       Explore More
                     </Link>
                   </div>

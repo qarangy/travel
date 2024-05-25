@@ -9,7 +9,7 @@ import 'swiper/css';
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import { FaUsers, FaTaxi, FaPlane, FaBuilding } from 'react-icons/fa';
 import i1 from '../../img/offers-istanbul.jpeg';
 import i2 from '../../img/offers-dubai.jpg';
@@ -90,7 +90,7 @@ const Offers1 = () => {
                     </div>
 
                     <div className="offers__card-link">
-                      <Link to="/" className="main__link">
+                      <Link to="/#contacts" className="main__link">
                         Make a Reservation
                       </Link>
                     </div>
@@ -138,7 +138,7 @@ const Offers1 = () => {
                     </div>
 
                     <div className="offers__card-link">
-                      <Link to="/" className="main__link">
+                      <Link to="/#contacts" className="main__link">
                         Make a Reservation
                       </Link>
                     </div>
@@ -186,7 +186,7 @@ const Offers1 = () => {
                     </div>
 
                     <div className="offers__card-link">
-                      <Link to="/" className="main__link">
+                      <Link to="/#contacts" className="main__link">
                         Make a Reservation
                       </Link>
                     </div>
@@ -235,7 +235,7 @@ const Offers1 = () => {
                     </div>
 
                     <div className="offers__card-link">
-                      <Link to="/" className="main__link">
+                      <Link to="/#contacts" className="main__link">
                         Make a Reservation
                       </Link>
                     </div>
@@ -288,7 +288,7 @@ const Offers1 = () => {
                     </div>
 
                     <div className="offers__card-link">
-                      <Link to="/" className="main__link">
+                      <Link to="/#contacts" className="main__link">
                         Make a Reservation
                       </Link>
                     </div>

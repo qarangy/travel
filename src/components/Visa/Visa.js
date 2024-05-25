@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import { ImPriceTags } from 'react-icons/im';
 import { MdOutlineAccessTimeFilled } from 'react-icons/md';
 import { FaUsers, FaCheck } from 'react-icons/fa';
@@ -60,7 +60,7 @@ const Visa = () => {
                 </div>
 
                 <div className="visa__card-link">
-                  <Link to="/" className="main__link">
+                  <Link to="/#contacts" className="main__link">
                     Make a Reservation
                   </Link>
                 </div>
@@ -103,7 +103,7 @@ const Visa = () => {
                 </div>
 
                 <div className="visa__card-link">
-                  <Link to="/" className="main__link">
+                  <Link to="/#contacts" className="main__link">
                     Make a Reservation
                   </Link>
                 </div>
@@ -146,7 +146,7 @@ const Visa = () => {
                 </div>
 
                 <div className="visa__card-link">
-                  <Link to="/" className="main__link">
+                  <Link to="/#contacts" className="main__link">
                     Make a Reservation
                   </Link>
                 </div>

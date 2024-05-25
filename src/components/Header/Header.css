@@ -21,7 +21,7 @@
 }
 .nav__link:hover::after {
   transition: 0.3s;
-  width: 20px;
+  width: 20%;
 }
 
 .navbar__right-wrapper {

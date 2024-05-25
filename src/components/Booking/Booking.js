@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import './Booking.css';
 
 const Booking = () => {
@@ -12,7 +12,9 @@ const Booking = () => {
           <h2 className="mb-[30px] text-[50px] leading-[60px] font-bold text-white">
             Make Your Reservation
           </h2>
-          <Link className="main__link">Discover More</Link>
+          <Link to="/#contacts" className="main__link">
+            Discover More
+          </Link>
         </div>
       </div>
     </div>

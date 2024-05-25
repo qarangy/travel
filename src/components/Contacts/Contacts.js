@@ -1,10 +1,47 @@
+import { useState } from 'react';
+import axios from 'axios';
 import { FaPhone } from 'react-icons/fa';
 import { IoIosMail } from 'react-icons/io';
 import { FaLocationDot } from 'react-icons/fa6';
 import './Contacts.css';
-import { Link } from 'react-router-dom';
 
 const Contacts = () => {
+  const [loading, setLoading] = useState(false);
+
+  const sendMessage = (e) => {
+    setLoading(true);
+    e.preventDefault();
+    const token = '6638012284:AAHGJ2RaJ6sPcCWUGbD7YJztldkUtbbH6zA';
+    const chatId = 5016052150;
+    const url = `https://api.telegram.org/bot${token}/sendMessage`;
+    const name = document.querySelector('#name').value;
+    const phoneNumber = document.querySelector('#phone__number').value;
+    const guestCount = document.querySelector('#guest__count').value;
+    const checkinDate = document.querySelector('#checkin__date').value;
+    const country = document.querySelector('#country').value;
+    const supportVisa = document.querySelector('#support__visa').value;
+
+    const messageContent = `Ismi: ${name} \nTelefon Nomeri: ${phoneNumber} \nMexmonlar soni: ${guestCount} \nKetish vaqti: ${checkinDate} \nDavlat: ${country} \nVisa turi: ${supportVisa}`;
+
+    axios({
+      url: url,
+      method: 'POST',
+      data: {
+        chat_id: chatId,
+        text: messageContent,
+      },
+    })
+      .then((res) => {
+        document.querySelector('#contacts__form').reset();
+        alert('Muvaffaqiyatli yuborildi');
+      })
+      .catch((error) => {
+        console.log('Yuborishda xatolik', error);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  };
   return (
     <div
       id="contacts"
@@ -57,14 +94,14 @@ const Contacts = () => {
             Make Your <span className="text-[#22B3C1]">Reservation</span>
             Through This <span className="text-[#22B3C1]">Form</span>
           </h2>
-          <form id="contacts__form">
+          <form id="contacts__form" onSubmit={sendMessage}>
             <div className="flex gap-[24px] mb-[30px]">
               <div className="flex flex-col w-[50%]">
                 <label className="mb-[8px]" htmlFor="">
                   Your Name
                 </label>
                 <input
-                  className="bg-inherit border px-[20px] py-[12px] rounded-[24px]"
+                  className="bg-inherit border px-[20px] py-[12px] rounded-[24px] text-[#2a2a2a]"
                   type="text"
                   id="name"
                   placeholder="Ex. John Smithee"
@@ -75,9 +112,9 @@ const Contacts = () => {
                   Your Phone Number
                 </label>
                 <input
-                  className="bg-inherit border px-[20px] py-[12px] rounded-[24px]"
+                  className="bg-inherit border px-[20px] py-[12px] rounded-[24px] text-[#2a2a2a]"
                   type="text"
-                  id="surname"
+                  id="phone__number"
                   placeholder="Ex. +99891 123 45 67"
                 />
               </div>
@@ -90,8 +127,8 @@ const Contacts = () => {
                 </label>
                 <select
                   className="bg-inherit border px-[20px] py-[12px] rounded-[24px] text-[#2a2a2a]"
-                  name="count"
-                  id="count"
+                  name="guest__count"
+                  id="guest__count"
                 >
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -106,8 +143,8 @@ const Contacts = () => {
                 <input
                   className="bg-inherit border px-[20px] py-[12px] rounded-[24px] text-[#2a2a2a]"
                   type="date"
-                  name="date"
-                  id="date"
+                  name="checkin__date"
+                  id="checkin__date"
                 />
               </div>
             </div>
@@ -119,8 +156,8 @@ const Contacts = () => {
                 </label>
                 <select
                   className="bg-inherit border px-[20px] py-[12px] rounded-[24px] text-[#2a2a2a]"
-                  name="count"
-                  id="count"
+                  name="country"
+                  id="country"
                 >
                   <option value="Turkey">Antalya</option>
                   <option value="Istanbul">Istanbul</option>
@@ -135,8 +172,8 @@ const Contacts = () => {
                 </label>
                 <select
                   className="bg-inherit border px-[20px] py-[12px] rounded-[24px] text-[#2a2a2a]"
-                  name="count"
-                  id="count"
+                  name="support__visa"
+                  id="support__visa"
                 >
                   <option value="Turkey">Turkey</option>
                   <option value="UAE">UAE</option>
@@ -144,9 +181,13 @@ const Contacts = () => {
                   <option value="USA">USA</option>
                 </select>
               </div>
-              <Link className="main__link w-[100%] text-center">
-                Make Your Reservation Now
-              </Link>
+              <button
+                className="main__link w-[100%] text-center text-white"
+                type="submit"
+                loading={loading}
+              >
+                {loading ? 'Sending...' : 'Make Your Reservation Now'}
+              </button>
             </div>
           </form>
         </div>

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import './Footer.css';
 
 const Footer = () => {
@@ -16,7 +16,9 @@ const Footer = () => {
               </h3>
             </div>
             <div className="">
-              <Link className="main__link-footer">Book Yours Now</Link>
+              <Link to="/#contacts" className="main__link-footer">
+                Book Yours Now
+              </Link>
             </div>
           </div>
         </div>

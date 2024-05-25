@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import { TiHome } from 'react-icons/ti';
 import { GrFormNextLink } from 'react-icons/gr';
 import { FaUser, FaGlobe } from 'react-icons/fa';
@@ -39,7 +39,10 @@ const Countries = () => {
                     <span className="">United Arab Emirated</span>
                   </div>
                   <div className="countries__card-link-wrapper">
-                    <Link className="main__link countries__card-link" to="/">
+                    <Link
+                      className="main__link countries__card-link"
+                      to="/#contacts"
+                    >
                       Explore More
                     </Link>
                   </div>
@@ -79,7 +82,7 @@ const Countries = () => {
                   <div className="countries__card-bottom-link">
                     <Link
                       className="flex items-center pt-[22px] font-medium text-[#22b3c1]"
-                      to="/"
+                      to="/#contacts"
                     >
                       Need Directions ?
                       <GrFormNextLink className="text-[20px]" />
@@ -102,7 +105,10 @@ const Countries = () => {
                     <span className="">Turkey</span>
                   </div>
                   <div className="countries__card-link-wrapper">
-                    <Link className="main__link countries__card-link" to="/">
+                    <Link
+                      className="main__link countries__card-link"
+                      to="/#contacts"
+                    >
                       Explore More
                     </Link>
                   </div>
@@ -142,7 +148,7 @@ const Countries = () => {
                   <div className="countries__card-bottom-link">
                     <Link
                       className="flex items-center pt-[22px] font-medium text-[#22b3c1]"
-                      to="/"
+                      to="/#contacts"
                     >
                       Need Directions ?
                       <GrFormNextLink className="text-[20px]" />
@@ -165,7 +171,10 @@ const Countries = () => {
                     <span className="">Egypt</span>
                   </div>
                   <div className="countries__card-link-wrapper">
-                    <Link className="main__link countries__card-link" to="/">
+                    <Link
+                      className="main__link countries__card-link"
+                      to="/#contacts"
+                    >
                       Explore More
                     </Link>
                   </div>
@@ -205,7 +214,7 @@ const Countries = () => {
                   <div className="countries__card-bottom-link">
                     <Link
                       className="flex items-center pt-[22px] font-medium text-[#22b3c1]"
-                      to="/"
+                      to="/#contacts"
                     >
                       Need Directions ?
                       <GrFormNextLink className="text-[20px]" />
@@ -228,7 +237,10 @@ const Countries = () => {
                     <span className="">Turkey</span>
                   </div>
                   <div className="countries__card-link-wrapper">
-                    <Link className="main__link countries__card-link" to="/">
+                    <Link
+                      className="main__link countries__card-link"
+                      to="/#contacts"
+                    >
                       Explore More
                     </Link>
                   </div>
@@ -267,7 +279,7 @@ const Countries = () => {
                   <div className="countries__card-bottom-link">
                     <Link
                       className="flex items-center pt-[22px] font-medium text-[#22b3c1]"
-                      to="/"
+                      to="/#contacts"
                     >
                       Need Directions ?
                       <GrFormNextLink className="text-[20px]" />
