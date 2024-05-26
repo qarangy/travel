@@ -46,9 +46,9 @@ const Main = () => {
                 </Link>
               </div>
 
-              <div className="main__bottom flex justify-between items-center bg-white py-[30px] px-[60px] rounded-[60px]">
-                <div className="main__card">
-                  <ul className="main__cards-list flex items-center gap-[48px]">
+              <div className="main__bottom flex flex-wrap justify-between items-center bg-white py-[30px] px-[60px] rounded-[60px]">
+                <div className="main__cards">
+                  <ul className="main__cards-list flex items-center">
                     <li className="main__card flex items-center">
                       <div className="card__img flex items-center justify-center text-[24px] text-[#22b3c1] w-[60px] h-[60px] border border-[#22b3c1] rounded-[50%] mr-[20px]">
                         <FaUser />
@@ -106,8 +106,8 @@ const Main = () => {
               </div>
 
               <div className="main__bottom flex justify-between items-center bg-white py-[30px] px-[60px] rounded-[60px]">
-                <div className="main__card">
-                  <ul className="main__cards-list flex items-center gap-[48px]">
+                <div className="main__cards">
+                  <ul className="main__cards-list flex items-center">
                     <li className="main__card flex items-center">
                       <div className="card__img flex items-center justify-center text-[24px] text-[#22b3c1] w-[60px] h-[60px] border border-[#22b3c1] rounded-[50%] mr-[20px]">
                         <FaUser />
@@ -165,8 +165,8 @@ const Main = () => {
               </div>
 
               <div className="main__bottom flex justify-between items-center bg-white py-[30px] px-[60px] rounded-[60px]">
-                <div className="main__card">
-                  <ul className="main__cards-list flex items-center gap-[48px]">
+                <div className="main__cards">
+                  <ul className="main__cards-list flex items-center">
                     <li className="main__card flex items-center">
                       <div className="card__img flex items-center justify-center text-[24px] text-[#22b3c1] w-[60px] h-[60px] border border-[#22b3c1] rounded-[50%] mr-[20px]">
                         <FaUser />

@@ -15,14 +15,14 @@ function App() {
     <>
       <Header />
       <Main />
-      <Offers />
+      {/* <Offers />
       <Visa />
       <Deals />
       <Countries />
       <Location />
       <Booking />
       <Contacts />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }

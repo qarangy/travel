@@ -53,9 +53,12 @@ h2 {
 }
 
 .main__card {
-  min-width: 268px;
   padding-left: 12px;
   padding-right: 12px;
+}
+
+.main__card:not(:last-child) {
+  margin-right: 48px;
 }
 
 .main__bottom {
